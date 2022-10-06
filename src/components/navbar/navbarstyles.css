@@ -1,0 +1,116 @@
+
+
+.navbar{
+    width: 100%;
+    height:  80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    color: white;
+}
+
+.nav-menu{
+    display: flex;
+}
+
+.navbar-bg{
+    background-color: #f5f5f5;
+}
+
+li{
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.hamburger{
+    display: none;
+    /* padding: 1rem; */
+}
+
+
+.mobile-menu{
+    display: none;
+}
+
+.icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 940px){
+
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        /* color: rgba(255, 255, 255, .95); */
+        width: 100%;
+        top:-100vh;
+        left: 0;
+        /* align-items: center; */
+        position: absolute;
+        justify-content: space-between;
+        background-color: whitesmoke;
+        transition: 0.3s;
+        color: black;
+    }
+     
+    .mobile-menu-button{
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .mobile-nav{
+        margin: 1rem 0;
+     }
+
+/* when the hamnurger is clicked it goes to 80px, when it is not, the mobile-menu becomes -100px which is written as a top:; -100px */
+     .active{
+        top: 80px;
+     }
+    .mobile-menu li{
+        padding: 1.2rem 3rem;
+        margin: 0 1rem;
+        border-bottom: 1px solid #ccc;
+    }
+
+
+    .dark{
+        color: black;
+    }
+      
+    .social-icons{
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 0;
+    }
+    
+    /* This is different from the mobile-menu-button */
+    .mobile-menu button{
+        width: 90%;
+        margin: 1em;
+    }
+
+
+    /* transition for each icon */
+    .social-icons .icon:hover{
+        transform: scale(1.5);
+        transition: 0.3s;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .nav-icons{
+        display: none;
+    }
+}

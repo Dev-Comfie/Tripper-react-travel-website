@@ -1,0 +1,12 @@
+.select .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    font-family: "poppins" , sans-serif;
+}
+
+@media screen and (max-width: 740px) {
+    .select .container {
+        grid-template-columns: 1fr;
+    }
+}
